@@ -3,8 +3,18 @@ import React, { Component } from 'react';
 
 class App extends Component {
   render() {
+    const names = ["Pedro", "Juan", "David"]
     return (
-      <h1>Hola Mundo</h1>
+      <div>
+        <h1>Hola mundo</h1>
+        <ul>
+          {names.map(name =>
+           <li>{name}</li>
+         )}
+        </ul>
+      </div>
+
+
     );
   }
 }
