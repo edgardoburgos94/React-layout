@@ -1,19 +1,16 @@
 import React, { Component } from 'react';
  import './App.css';
+ import Welcome2 from './Title.js';
 
+const Welcome = () => <h1>Hola mundo desde componente</h1>;
 class App extends Component {
   render() {
     const names = ["Pedro", "Juan", "David"]
     return (
       <div>
-        <h1>Hola mundo</h1>
-        <ul>
-          {names.map(name =>
-           <li>{name}</li>
-         )}
-        </ul>
+        <Welcome />
+        {names.map(name => <Welcome2 name={name}/>)}
       </div>
-
 
     );
   }
